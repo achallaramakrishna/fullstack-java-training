@@ -1,6 +1,5 @@
 package firstproj;
 
-// Student class
 public class Student {
 	
 	private int rollNo;
