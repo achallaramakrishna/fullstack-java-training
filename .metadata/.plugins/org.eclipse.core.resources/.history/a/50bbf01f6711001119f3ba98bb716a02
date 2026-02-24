@@ -1,0 +1,12 @@
+package firstproj;
+
+public class HeightProgram {
+
+	public static void main(String[] args) {
+		
+		Height h1 = new Height(5,8);
+		Height h2 = new Height(5,9);
+		
+	}
+
+}

@@ -1,0 +1,42 @@
+package firstproj;
+
+public class Student {
+	
+	private int rollNo;
+	private String firstName;
+	private String lastName;
+	private int grade;
+	
+	public void setRollNo(int rollNo) {
+		this.rollNo = rollNo;
+	}
+	public int getRollNo() {
+		return this.rollNo;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public int getGrade() {
+		return grade;
+	}
+	public void setGrade(int grade) {
+		this.grade = grade;
+	}
+	@Override
+	public String toString() {
+		return "Student [rollNo=" + rollNo + ", firstName=" + firstName + ", lastName=" + lastName + ", grade=" + grade
+				+ "]";
+	}
+	
+	
+
+}

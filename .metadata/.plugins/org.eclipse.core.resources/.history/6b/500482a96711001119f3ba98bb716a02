@@ -1,0 +1,40 @@
+package firstproj;
+
+public class Height {
+	
+	private int ft;
+	private int inch;
+	
+	
+	// parametrized constructor.
+	public Height(int ft,int inch) {
+		this.ft = ft;
+		this.inch = inch;
+	}
+	
+	public int getFt() {
+		return ft;
+	}
+	public void setFt(int ft) {
+		this.ft = ft;
+	}
+	public int getInch() {
+		return inch;
+	}
+	public void setInch(int inch) {
+		this.inch = inch;
+	}
+	
+	public void setHeight(int ft,int inch) {
+		this.ft = ft;
+		this.inch = inch;
+	}
+
+	public Height add(Height h2) {
+		Height temp = new Height();
+		temp.ft = this.ft + h2.ft;
+		temp.inch = this.inch + h2.inch;
+		return null;
+	}
+
+}

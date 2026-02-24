@@ -1,0 +1,25 @@
+package firstproj;
+
+public class Height {
+	
+	private int ft;
+	private int inch;
+	public int getFt() {
+		return ft;
+	}
+	public void setFt(int ft) {
+		this.ft = ft;
+	}
+	public int getInch() {
+		return inch;
+	}
+	public void setInch(int inch) {
+		this.inch = inch;
+	}
+	
+	public void setHeight(int ft,int inch) {
+		this.ft = ft;
+		this.inch = inch;
+	}
+
+}

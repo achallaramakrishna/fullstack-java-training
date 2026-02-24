@@ -1,0 +1,12 @@
+package firstproj;
+
+public class Student {
+	
+	private int rollNo;
+	private String firstName;
+	private String lastName;
+	private int grade;
+	
+	
+
+}

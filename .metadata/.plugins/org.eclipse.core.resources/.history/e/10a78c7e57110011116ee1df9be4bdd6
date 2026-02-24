@@ -1,0 +1,15 @@
+package firstproj;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+	int array[]; // an object reference.
+	
+	
+		
+		
+
+	}
+
+}

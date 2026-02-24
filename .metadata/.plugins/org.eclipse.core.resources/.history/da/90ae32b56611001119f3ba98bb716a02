@@ -1,0 +1,10 @@
+package firstproj;
+
+public class Height {
+	
+	private int ft;
+	private int inch;
+	
+	
+
+}

@@ -1,0 +1,66 @@
+package firstproj;
+
+public class Height {
+	
+	private int ft;
+	private int inch;
+	
+	private static final double  ft_to_cm = 2.54;
+	private static final int ft_to_inch = 12;
+	
+	
+	
+	
+	// parametrized constructor.
+	public Height(int ft,int inch) {
+		this.ft = ft;
+		this.inch = inch;
+	}
+	
+	// default constructor (no argument constructor)
+	public Height() {
+		
+		this.ft = 0;
+		this.inch = 0;
+	}
+	// copy constructor
+	public Height(Height h) {
+		this.ft = h.ft;
+		this.inch = h.inch;
+	}
+
+	public int getFt() {
+		return ft;
+	}
+	public void setFt(int ft) {
+		this.ft = ft;
+	}
+	public int getInch() {
+		return inch;
+	}
+	public void setInch(int inch) {
+		this.inch = inch;
+	}
+	
+	public void setHeight(int ft,int inch) {
+		this.ft = ft;
+		this.inch = inch;
+	}
+
+	public Height add(Height h2) {
+		Height temp = new Height();
+		temp.ft = this.ft + h2.ft;
+		temp.inch = this.inch + h2.inch;
+		if(temp.inch>= Height.ft_to_inch) {
+			temp.ft++;
+			temp.inch -=12;
+		}
+		return temp;
+	}
+	
+	public double getCm() {
+		
+		return (Height.ft_to_cm * (ft*Height.ft_to_inch + inch));
+	}
+
+}

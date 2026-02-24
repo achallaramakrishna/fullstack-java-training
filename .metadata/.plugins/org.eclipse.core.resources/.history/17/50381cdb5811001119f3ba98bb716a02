@@ -1,0 +1,38 @@
+package firstproj;
+
+public class Program {
+
+	public static int[] sort(int array[]) {
+		
+		return
+	}
+	public static int max(int array[]) {
+		
+	}
+	public static int min(int array[]) {
+		
+	}
+	public static int mean(int array[]) {
+		
+	}
+	public static void main(String[] args) {
+		
+	int array[]; // an object reference.
+	
+	array = new int[4]; // an array of 10 object references
+	
+	array[0] = 120;
+	array[1] = 34;
+	array[2] = 67;
+	array[3] = 5;
+	
+	int sortedArray[] = sort(array);
+	int maxElement = max(array);
+	int minElement = min(array);
+	int meanElement = mean(array);
+		
+		
+
+	}
+
+}

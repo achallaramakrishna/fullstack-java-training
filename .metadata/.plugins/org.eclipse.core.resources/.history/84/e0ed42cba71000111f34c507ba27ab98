@@ -1,0 +1,14 @@
+package firstproj;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		double dval = 34.56;
+		long lval = 33.45l;
+		
+		System.out.println("Welcome to Broadridge Training");
+
+	}
+
+}
