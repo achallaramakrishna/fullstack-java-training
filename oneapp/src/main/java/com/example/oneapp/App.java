@@ -8,15 +8,15 @@ public class App
 {
     public static void main( String[] args )
     {
-    	System.out.println(Employee.getCount());
+    	System.out.println(BREmployee.getCount());
     	
-        Employee e1 = new Employee(1,"rama");
-    	System.out.println(Employee.getCount());
+        BREmployee e1 = new BREmployee(1,"rama");
+    	System.out.println(BREmployee.getCount());
 
-        Employee e2 = new Employee(2,"hari");
+        BREmployee e2 = new BREmployee(2,"hari");
         System.out.println(e1);
         System.out.println(e2);
-    	System.out.println(Employee.getCount());
+    	System.out.println(BREmployee.getCount());
     	
     	Single s1 = Single.getInstance();
     	Single s2 = Single.getInstance();
@@ -27,7 +27,10 @@ public class App
     		System.out.println("different objects");
     	}
     	// Single s3 = new Single();
-
+    	
+    	Employee employee = new Employee(1,"rama","achalla",100,"Trainer");
+    	
+    	System.out.println(employee);
     }
 }
 

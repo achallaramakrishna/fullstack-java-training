@@ -1,40 +1,47 @@
 package com.example.oneapp;
 
-public class Employee {
+public class Employee extends Person {
 	
-	// instance variable
-	private int empID;
-	private String name;
+	private int empId;
+	private double basic;
+	private String designation;
 	
-	// class variable
-	private static int count;
 	
+	public Employee(int empId, String firstName, String lastName,
+				double basic, String designation) {
+		
+		super(firstName,lastName);
+		this.empId = empId;
+		this.basic = basic;
+		this.designation = designation;
+	}
+	
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	public double getBasic() {
+		return basic;
+	}
+	public void setBasic(double basic) {
+		this.basic = basic;
+	}
+	public String getDesignation() {
+		return designation;
+	}
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
 
-	// static method
-	public static int getCount() {
-		return count;
-	}
-	public Employee(int empID, String name) {
-		count++;
-		this.empID = empID;
-		this.name = name;
-	}
-	public int getEmpID() {
-		return empID;
-	}
-	public void setEmpID(int empID) {
-		this.empID = empID;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
 	@Override
 	public String toString() {
-		return "Employee [empID=" + empID + ", name=" + name + "]";
+		return "Employee [empId=" + empId + ", basic=" + basic + ", designation=" + designation + ", getFirstName()="
+				+ getFirstName() + ", getLastName()=" + getLastName() + ", toString()=" + super.toString()
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
 	}
+
 	
 	
 	
