@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+       <!-- Student bean -->
+       <!-- setter injection -->
+       <bean id="student" class="com.example.model.Student">
+       		<property name="id" value="100" />
+       		<property name="name" value="Raj" />
+       		<property name="course" value="Java" />
+       </bean>
+       
+       
+       <bean id="course" class="com.example.model.Course"/>
+       <bean id="trainer" class="com.example.model.Trainer">
+       		<constructor-arg value="101" type="int"/>
+       		<constructor-arg value="Rama Achalla" type="String"/>
+       		<constructor-arg value="Java" type="String"/>
+       </bean>
+       
+       
+
+    <!-- Engine Bean -->
+    <bean id="engine" class="com.example.model.Engine"/>
+
+    <!-- Car Bean -->
+    <bean id="car" class="com.example.model.Car">
+
+        <!-- Dependency Injection -->
+        <property name="engine" ref="engine"/>
+
+    </bean>
+
+</beans>
