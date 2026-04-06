@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.example.model.BREmployee;
 
+// this is a comment
 public interface BREmployeeDao {
 	
 	List<BREmployee> findAll() throws SQLException ;
