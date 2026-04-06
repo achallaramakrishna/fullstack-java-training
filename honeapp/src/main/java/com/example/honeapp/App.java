@@ -15,7 +15,7 @@ public class App
 {
     public static void main( String[] args )
     {
-    	// get the session factory
+    	// get the session factory - one per database
         SessionFactory sessionFactory =
         		new Configuration().configure().buildSessionFactory();
        
